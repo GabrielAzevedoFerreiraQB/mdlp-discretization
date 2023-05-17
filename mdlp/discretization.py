@@ -5,8 +5,6 @@
 
 from __future__ import absolute_import
 
-from math import floor, log10
-
 import numpy as np
 
 from sklearn.base import BaseEstimator
