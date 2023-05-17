@@ -151,7 +151,7 @@ class MDLP(BaseEstimator, TransformerMixin):
             self.continuous_features_ = np.arange(X.shape[1])
         else:
             continuous_features = np.array(self.continuous_features)
-            if continuous_features.dtype == np.bool:
+            if continuous_features.dtype == bool:
                 continuous_features = np.arange(len(continuous_features))[continuous_features]
             else:
                 continuous_features = continuous_features.astype(int, casting='safe')
